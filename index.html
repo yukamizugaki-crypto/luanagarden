@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ルアナガーデン（Luana Garden）は栃木県佐野市のハワイアンカフェ。ロコモコプレート・リチャムおにぎり・ソフトクリームなどハワイアンフードを提供。テラス席はペット（わんちゃん・猫ちゃん）OK。ご予約はお電話にて承ります。" />
+  <title>Luana Garden | ルアナガーデン - Cafe &amp; Kitchen 栃木県佐野市</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Caveat:wght@400;600&family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header" role="banner">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="header-logo" aria-label="ルアナガーデン トップへ">
+        <img src="img/ロゴ.jpg" alt="Luana Garden ロゴ" />
+
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <a href="#hero">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">MENU</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#special">SPECIAL</a>
+        <a href="#access">ACCESS</a>
+        <a href="https://www.instagram.com/luanagarden2021/?hl=ja" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      </nav>
+
+      <!-- Reserve Button (desktop) -->
+      <button class="btn-reserve js-open-modal" id="reserveBtnDesktop" aria-label="ご予約・お電話">
+        RESERVE<br>TABLE
+      </button>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="モバイルメニュー">
+    <div class="mobile-menu-logo">
+      <img src="img/ロゴ.jpg" alt="Luana Garden ロゴ" />
+    </div>
+    <nav aria-label="モバイルナビゲーション">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#special">Special</a>
+      <a href="#access">Access</a>
+      <a href="https://www.instagram.com/luanagarden2021/?hl=ja" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </nav>
+    <div class="mobile-menu-reserve">
+      <a href="tel:0283555525" class="btn btn-primary"><span>TEL : 0283-55-5525</span></a>
+    </div>
+    <!-- Wave Decoration -->
+    <div class="mobile-menu-wave">
+      <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0077c7" d="M0,96L60,101.3C120,107,240,117,360,112C480,107,600,85,720,90.7C840,96,960,128,1080,128C1200,128,1320,96,1380,80L1440,64L1440,200L1380,200C1320,200,1200,200,1080,200C960,200,840,200,720,200C600,200,480,200,360,200C240,200,120,200,60,200L0,200Z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" aria-label="メインビジュアル">
+
+    <!-- Slideshow -->
+    <div class="hero-slideshow" aria-hidden="true">
+      <!-- PC用スライド -->
+      <div class="hero-slide pc-only-slide" style="background-image: url('img/ヒーローセクション2.jpg');"></div>
+      <div class="hero-slide pc-only-slide" style="background-image: url('img/店外2.jpg');"></div>
+      <div class="hero-slide pc-only-slide" style="background-image: url('img/ヒーローセクション.jpg');"></div>
+      <div class="hero-slide pc-only-slide" style="background-image: url('img/テラス席.jpg');"></div>
+      <!-- スマホ用スライド -->
+      <div class="hero-slide sp-only-slide" style="background-image: url('img/ヒーローセクション3.jpg');"></div>
+    </div>
+
+    <!-- Palm decoration -->
+    <svg class="palm-deco" viewBox="0 0 220 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <ellipse cx="160" cy="60" rx="90" ry="28" fill="white" transform="rotate(-30 160 60)" opacity="0.6"/>
+      <ellipse cx="170" cy="90" rx="100" ry="26" fill="white" transform="rotate(-10 170 90)" opacity="0.5"/>
+      <ellipse cx="140" cy="40" rx="85" ry="24" fill="white" transform="rotate(-50 140 40)" opacity="0.5"/>
+      <ellipse cx="180" cy="120" rx="95" ry="22" fill="white" transform="rotate(10 180 120)" opacity="0.4"/>
+      <rect x="148" y="100" width="10" height="380" rx="5" fill="white" opacity="0.5"/>
+    </svg>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <p class="hero-sub">Cafe &amp; Kitchen / Sano, Tochigi</p>
+      <h1 class="hero-title">Good vibes,<br>Great food.</h1>
+      <p class="hero-tagline">ハワイの心地よさを、あなたのお隣に。</p>
+      <!-- Wave deco -->
+      <div class="hero-wave" aria-hidden="true">
+        <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 8 Q10 0 20 8 Q30 16 40 8 Q50 0 60 8 Q70 16 80 8" stroke="rgba(255,255,255,0.7)" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+
+  </section>
+
+  <!-- Wave transition -->
+  <div class="wave-svg-deco" aria-hidden="true">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-2px;">
+      <path d="M0,28L60,22.4C120,17,240,6,360,8.4C480,11,600,28,720,30.8C840,34,960,22,1080,19.6C1200,17,1320,22,1380,24.5L1440,28L1440,56L0,56Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section-wrap" aria-label="ルアナガーデンについて">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Text -->
+        <div class="about-text reveal">
+          <span class="label">Our Story</span>
+          <h2>About Luana Garden</h2>
+          <div class="about-deco">
+            <div class="about-deco-line"></div>
+            <svg class="about-deco-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            <div class="about-deco-line"></div>
+          </div>
+          <p>
+            白と青を基調にした爽やかな空間で、ハワイのローカル気分を味わえるカフェ&キッチン。
+            お子様からご年配の方まで、幅広い年齢層の方に気軽に立ち寄っていただけるお店です。
+          </p>
+          <p>
+            ハワイアンフードをはじめ、家族みんなで楽しめるメニューをご用意しております。
+            のんびりとした時間をお過ごしください。
+          </p>
+          <div class="about-features">
+            <span class="about-feature-tag">テラス席あり</span>
+            <span class="about-feature-tag">ペット同伴OK</span>
+            <span class="about-feature-tag">お弁当注文</span>
+            <span class="about-feature-tag">イベント出店</span>
+            <span class="about-feature-tag">お祝いプレート</span>
+            <span class="about-feature-tag">駐車場完備</span>
+          </div>
+
+        </div>
+
+        <!-- Image -->
+        <div class="about-image reveal reveal-delay-2">
+          <img src="img/店内.jpg" alt="ルアナガーデン店内" class="about-image-main" />
+          <img src="img/店内2.jpg" alt="ルアナガーデン店内カウンター席" class="about-image-sub" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section id="menu" class="section-wrap" aria-label="メニュー">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span class="wave-deco">~ Our Menu ~</span>
+        <h2>
+          <span class="tilde">~</span>
+          Our Menu
+          <span class="tilde">~</span>
+        </h2>
+        <p>ハワイアンテイストの本格フードをお楽しみください</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="menu-grid">
+
+        <!-- リチャムおにぎり -->
+        <article class="menu-card reveal reveal-delay-1">
+          <div class="menu-card-img">
+            <img src="img/リチャムおにぎり.jpg" alt="リチャムおにぎり" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-en">RICHAMU ONIGIRI</p>
+            <h3>リチャムおにぎり</h3>
+            <p>ハワイのソウルフード「リチャム（スパムおにぎり）」をルアナ流にアレンジ。ボリューム満点の一品です。</p>
+          </div>
+        </article>
+
+        <!-- ロコモコプレート -->
+        <article class="menu-card reveal reveal-delay-2">
+          <div class="menu-card-img">
+            <img src="img/ロコモコプレート.jpg" alt="ロコモコプレート" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-en">LOCO MOCO PLATE</p>
+            <h3>ロコモコプレート</h3>
+            <p>ハワイを代表するロコモコ。肉汁たっぷりのハンバーグに特製グレービーソースをたっぷりかけた絶品プレート。</p>
+          </div>
+        </article>
+
+        <!-- スペシャルホットケーキ -->
+        <article class="menu-card reveal reveal-delay-3">
+          <div class="menu-card-img">
+            <img src="img/スペシャルホットケーキ.jpg" alt="スペシャルホットケーキ" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-en">SPECIAL HOTCAKE</p>
+            <h3>スペシャルホットケーキ</h3>
+            <p>ふわふわとろとろの特製ホットケーキ。フレッシュな旬のトッピングが彩りを添えます。</p>
+          </div>
+        </article>
+
+        <!-- ホットドッグセット -->
+        <article class="menu-card reveal reveal-delay-1">
+          <div class="menu-card-img">
+            <img src="img/ホットドッグセット.jpg" alt="ホットドッグセット" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-en">HOT DOG SET</p>
+            <h3>ホットドッグセット</h3>
+            <p>ジューシーなソーセージをサンドしたホットドッグをセットでご提供。気軽に楽しめる人気メニューです。</p>
+          </div>
+        </article>
+
+        <!-- ソフトクリーム -->
+        <article class="menu-card reveal reveal-delay-2">
+          <div class="menu-card-img">
+            <img src="img/ソフトクリーム.jpg" alt="ソフトクリーム" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-en">SOFT CREAM</p>
+            <h3>ソフトクリーム</h3>
+            <p>濃厚ミルクの風味豊かなソフトクリーム。お店のシンボルとして愛されています。</p>
+          </div>
+        </article>
+
+        <!-- サンデー -->
+        <article class="menu-card reveal reveal-delay-3">
+          <div class="menu-card-img">
+            <img src="img/サンデー.jpg" alt="サンデー" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-en">SUNDAE</p>
+            <h3>サンデー</h3>
+            <p>ソフトクリームをたっぷり使ったボリューム満点のサンデー。見た目も華やかで特別なひとときを演出します。</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="menu-cta reveal">
+        <a href="tel:0283555525" class="btn btn-primary"><span>TEL : 0283-55-5525</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section id="gallery" class="section-wrap" aria-label="ギャラリー">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span class="wave-deco">~ Gallery ~</span>
+        <h2>
+          <span class="tilde">~</span>
+          Gallery
+          <span class="tilde">~</span>
+        </h2>
+        <p>ルアナガーデンの雰囲気をご覧ください</p>
+        <div class="section-divider"></div>
+      </div>
+
+    </div>
+
+    <!-- 自動スクロールループスライダー (全幅) -->
+    <div class="gallery-slider reveal">
+      <div class="gallery-track">
+        <!-- オリジナルスライド 6枚 -->
+        <div class="gallery-slide"><img src="img/店外.jpg" alt="ルアナガーデン外観" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/店外2.jpg" alt="ルアナガーデン青いドア" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/テラス席.jpg" alt="テラス席" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/店内.jpg" alt="店内" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/店内2.jpg" alt="カウンター席" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/ヒーローセクション.jpg" alt="料理" loading="lazy" /></div>
+        <!-- 無限ループ用の複製スライド 6枚 -->
+        <div class="gallery-slide"><img src="img/店外.jpg" alt="ルアナガーデン外観" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/店外2.jpg" alt="ルアナガーデン青いドア" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/テラス席.jpg" alt="テラス席" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/店内.jpg" alt="店内" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/店内2.jpg" alt="カウンター席" loading="lazy" /></div>
+        <div class="gallery-slide"><img src="img/ヒーローセクション.jpg" alt="料理" loading="lazy" /></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== SPECIAL ===================== -->
+  <section id="special" class="section-wrap" aria-label="特別サービス">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span class="wave-deco">~ Special Service ~</span>
+        <h2>
+          <span class="tilde">~</span>
+          Special
+          <span class="tilde">~</span>
+        </h2>
+        <p>喫茶・カフェ以外にも、様々なサービスをご提供しています</p>
+        <p>お電話にてご相談ください</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="special-grid">
+
+        <!-- お祝いプレート -->
+        <div class="special-card reveal reveal-delay-1">
+          <h3>お祝いプレート</h3>
+          <p>
+            誕生日・記念日などのお祝いに、特別なプレートをご用意いたします。
+            ご予算やご希望をお電話でご相談のうえ、お客様と一緒に内容を決めてまいります。
+          </p>
+        </div>
+
+        <!-- 注文弁当 -->
+        <div class="special-card reveal reveal-delay-2">
+          <h3>注文弁当</h3>
+          <p>
+            様々なシーン（ご宴席・運動会・会議など）に合わせたお弁当をご注文いただけます。
+            ご予算と入れてほしいものをお客様と相談しながら、オリジナルのお弁当をお造りします。
+          </p>
+        </div>
+
+        <!-- イベント出店 -->
+        <div class="special-card reveal reveal-delay-3">
+          <h3>イベント出店</h3>
+          <p>
+            お祭り・地域イベント・マルシェなどへのご依頼があれば、出店も可能です。
+            ルアナガーデンならではの軽食・スイーツをイベント会場でお楽しみいただけます。
+            お気軽にご相談ください。
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Terrace pet section -->
+  <section class="section-wrap" style="background: var(--color-bg-section); padding: 60px 0;" aria-label="テラス席について">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-image reveal">
+          <img src="img/テラス席.jpg" alt="テラス席 ペット同伴OK" class="about-image-main" style="height:320px;" />
+        </div>
+        <div class="about-text reveal reveal-delay-2">
+          <span class="label">Terrace Seat</span>
+          <h2>テラス席</h2>
+          <div class="about-deco">
+            <div class="about-deco-line"></div>
+            <svg class="about-deco-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+            <div class="about-deco-line"></div>
+          </div>
+          <p>
+            開放的なテラス席をご用意しています。大切なペットと一緒にお越しください。
+            わんちゃん・猫ちゃんも大歓迎です。
+          </p>
+          <p>
+            青空の下、のんびりとした時間をペットと一緒に過ごしてみませんか？
+          </p>
+          <div class="about-features">
+            <span class="about-feature-tag">わんちゃんOK</span>
+            <span class="about-feature-tag">猫ちゃんOK</span>
+            <span class="about-feature-tag">テラス席</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== ACCESS ===================== -->
+  <section id="access" aria-label="アクセス情報">
+
+
+    <div class="container">
+      <div class="access-inner">
+
+        <!-- Text -->
+        <div class="access-text reveal">
+          <h2>ACCESS</h2>
+
+          <div class="access-info-list">
+
+            <!-- Address -->
+            <div class="access-info-item">
+              <div class="ai-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="ai-content">
+                <p class="ai-label">Address</p>
+                <p>〒327-0803<br>栃木県佐野市犬伏新町２０６２－３</p>
+              </div>
+            </div>
+
+            <!-- Tel -->
+            <div class="access-info-item">
+              <div class="ai-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.07 1.21 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14h0v2.92z"/>
+                </svg>
+              </div>
+              <div class="ai-content">
+                <p class="ai-label">Tel</p>
+                <p><a href="tel:0283555525" style="color:white; text-decoration:none;">0283-55-5525</a></p>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="access-info-item">
+              <div class="ai-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="ai-content">
+                <p class="ai-label">Hours</p>
+                <p>火・水・木・金・土　9:00 〜 17:00<br>
+                   日・祝　9:00 〜 17:00（L.O. 16:00）</p>
+              </div>
+            </div>
+
+            <!-- Holiday -->
+            <div class="access-info-item">
+              <div class="ai-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="ai-content">
+                <p class="ai-label">Holiday</p>
+                <p>定休日：月曜日<br>（祝日の場合は営業）</p>
+              </div>
+            </div>
+
+            <!-- Parking -->
+            <div class="access-info-item">
+              <div class="ai-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="1" y="3" width="15" height="13" rx="2"/>
+                  <path d="M16 8h4l3 3v5h-7V8z"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/>
+                  <circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+              </div>
+              <div class="ai-content">
+                <p class="ai-label">Parking</p>
+                <p>専用駐車場 6台<br>道路反対側に 6〜7台<br>ご予約時にご相談ください</p>
+              </div>
+            </div>
+
+            <!-- Reserve -->
+            <div class="access-info-item">
+              <div class="ai-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <div class="ai-content">
+                <p class="ai-label">Reserve</p>
+                <p>ご予約はお電話にてお願いいたします</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="https://www.google.com/maps/place/%E3%83%AB%E3%82%A2%E3%83%8A%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3/data=!4m2!3m1!1s0x0:0xe080601230dd9d8d?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" class="btn btn-white"><span>VIEW MAP</span></a>
+        </div>
+
+        <!-- Map -->
+        <div class="access-map reveal reveal-delay-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.4975!2d139.5774!3d36.3059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe080601230dd9d8d!2z44Or44Ki44OK44K244O844Gf44Oz!5e0!3m2!1sja!2sjp!4v1721727600000!5m2!1sja!2sjp"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="ルアナガーデン Google マップ"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <!-- Logo -->
+        <div class="footer-logo">
+          <img src="img/ロゴ.jpg" alt="Luana Garden ロゴ" />
+          <span class="footer-logo-sub">Cafe &amp; Kitchen</span>
+        </div>
+
+        <!-- SNS -->
+        <div class="footer-sns">
+          <a href="https://www.instagram.com/luanagarden2021/?hl=ja" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Footer Nav -->
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <a href="#hero">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#menu">MENU</a>
+          <a href="#gallery">GALLERY</a>
+          <a href="#special">SPECIAL</a>
+          <a href="#access">ACCESS</a>
+        </nav>
+
+        <div class="footer-divider"></div>
+
+        <p class="footer-copyright">&copy; Luana Garden All Rights Reserved.</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== RESERVE MODAL ===================== -->
+  <div class="modal-overlay" id="reserveModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <h3 id="modalTitle">Reserve</h3>
+      <p class="modal-sub">ご予約はお電話にてお受けしております</p>
+      <a class="modal-phone" href="tel:0283555525">0283-55-5525</a>
+      <p class="modal-hours">
+        火〜土・日・祝　9:00 〜 17:00<br>
+        定休日：月曜日（祝日は営業）
+      </p>
+      <button class="modal-close" id="modalClose">閉じる</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
